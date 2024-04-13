@@ -5,7 +5,7 @@
   text-align: center;
   background-color: #fff;
   border: 2px solid #e8e8e8;
-  padding: 1.5rem 10%;
+  padding: 2.5rem 10%;
 }
 
 .links {
@@ -13,8 +13,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 3rem;
-  font-size: 1.5rem;
+  gap: 4.5rem;
+  font-size: 1.7rem;
   letter-spacing: 3px;
   font-family: 'Montserrat', sans-serif;
 }
@@ -23,6 +23,7 @@
   font-size: 3rem;
   font-weight: bold;
   color: #0290ff;
+  letter-spacing: 0.1px;
 }
 
 .books {
