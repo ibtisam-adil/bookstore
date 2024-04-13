@@ -68,7 +68,7 @@
   justify-content: center;
 }
 
-.progress-bar:before {
+.progress-bar::before {
   content: "";
   position: absolute;
   height: 80%;
