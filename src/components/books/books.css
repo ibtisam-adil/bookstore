@@ -1,17 +1,129 @@
 .book-card {
   background-color: #fafafa;
+  padding: 3rem 10%;
 }
 
 .main {
-  padding: 3rem 10%;
+  display: grid;
+  grid-template-columns: 1.8fr 1.5fr 1fr;
+  margin-bottom: 20px;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  padding: 1rem 2rem;
+}
+
+.book-detail {
+  background-color: white;
+  font-size: 1.8rem;
+  padding: 4rem 5rem;
+  align-items: center;
+}
+
+.book-author {
+  color: #4386bf;
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.book-heading {
+  margin-top: 5px;
 }
 
 .buttons {
   display: flex;
+  gap: 2rem;
+  margin-top: 20px;
+  padding: 0 10px 0 0;
+}
+
+.btn {
+  background-color: #fff;
+  border: none;
+  border-right: 1px solid #e8e8e8;
+  color: #4386bf;
+  padding: 0 15px 0 0;
+  font-size: 1.7rem;
 }
 
 .line {
   height: 1.5rem;
   margin: 0.75rem 1.063rem 0 0.938rem;
   border: solid 1px #e8e8e8;
+}
+
+.book-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-bar {
+  position: relative;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-bar:before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.progress-bar-container {
+  position: relative;
+}
+
+.progress-value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.completed {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.seperator {
+  height: 8.5rem;
+  margin: 1.125rem 3.688rem 0 6.938rem;
+  border: solid 1px #e8e8e8;
+}
+
+.book-status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2rem;
+}
+
+.chapter-heading {
+  color: #bebebe;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.update-progress {
+  background-color: #0290ff;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  margin: 10px 5rem 0 0;
+  padding: 12px 20px;
 }
