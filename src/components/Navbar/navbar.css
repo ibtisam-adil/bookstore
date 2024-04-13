@@ -1,0 +1,45 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #e8e8e8;
+  padding: 1.5rem 10%;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bookstore-cms {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0290ff;
+}
+
+.books {
+  color: #121212;
+}
+
+.categories {
+  opacity: 0.5;
+  color: #121212;
+}
+
+.login {
+  padding: 0.7rem 0.7rem 0.6rem 0.7rem;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 55px;
+  color: #0290ff;
+  height: 1rem;
+  width: 1rem;
+}
