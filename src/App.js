@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
@@ -10,8 +11,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Books />} />
-          <Route path="/categories" element={<Form />} />
+          <Route path="/" element={[<Books key="books" />, <Form key="form" />]} />
         </Routes>
       </BrowserRouter>
     </>
