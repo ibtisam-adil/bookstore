@@ -1,0 +1,36 @@
+form {
+  margin: 0 10%;
+}
+
+.form-title {
+  color: #888;
+  font-size: 2.5rem;
+  margin: 1.8rem 0;
+}
+
+.input-field {
+  grid-gap: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+form input {
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+
+.category {
+  color: #8b8b8b;
+  font-weight: 700;
+  margin: 0;
+}
+
+form button {
+  background-color: #0290ff;
+  border: none;
+  border-radius: 5px;
+  color: #bad7f0;
+  padding: 1.5rem;
+}

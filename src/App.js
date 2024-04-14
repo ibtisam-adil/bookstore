@@ -1,12 +1,19 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Books from './components/books/Books';
+import Form from './components/form/Form';
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Books />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Books />} />
+          <Route path="/categories" element={<Form />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
