@@ -60,6 +60,7 @@ const Books = () => {
           <button type="submit" className="update-progress">Update progress</button>
         </div>
       </div>
+      <div className="seperator-line" />
     </section>
   );
 };

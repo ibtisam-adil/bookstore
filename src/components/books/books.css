@@ -1,15 +1,14 @@
 .book-card {
-  background-color: #fafafa;
   padding: 3rem 10%;
 }
 
 .main {
   display: grid;
   grid-template-columns: 1.8fr 1.5fr 1fr;
-  margin-bottom: 20px;
   border: 1px solid #e8e8e8;
   background-color: #fff;
   padding: 1rem 2rem;
+  margin-bottom: 3.5rem;
 }
 
 .book-detail {
@@ -96,6 +95,7 @@
 .completed {
   font-weight: bold;
   font-size: 1.5rem;
+  color: #8b8b8b;
 }
 
 .seperator {
@@ -124,6 +124,10 @@
   border: none;
   border-radius: 7px;
   color: #fff;
-  margin: 10px 5rem 0 0;
-  padding: 12px 20px;
+  width: 55%;
+  padding: 15px 20px;
+}
+
+.seperator-line {
+  border-bottom: 1px solid #e8e8e8;
 }
