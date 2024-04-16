@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './books.css';
+import PropTypes from 'prop-types';
 
-const Books = () => {
+const Books = ({ title, author, category }) => {
   const [progressValue, setProgressValue] = useState(0);
   const progressEndValue = 65;
   const speed = 100;
@@ -24,9 +25,9 @@ const Books = () => {
     <section className="book-card">
       <div className="main">
         <div className="book-detail">
-          <p>Fiction</p>
-          <h2 className="book-heading">To Kill a Mockingbird</h2>
-          <p className="book-author">Harper Lee</p>
+          <p className="book-category">{category}</p>
+          <h2 className="book-heading">{title}</h2>
+          <p className="book-author">{author}</p>
           <div className="buttons">
             <button className="btn" type="submit">Comments</button>
             <button className="btn" type="submit">Remove</button>
@@ -60,9 +61,14 @@ const Books = () => {
           <button type="submit" className="update-progress">Update progress</button>
         </div>
       </div>
-      <div className="seperator-line" />
     </section>
   );
+};
+
+Books.propTypes = {
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
 };
 
 export default Books;
