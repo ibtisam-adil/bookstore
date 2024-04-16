@@ -20,14 +20,20 @@ function App() {
             path="/"
             element={(
               <>
-                {books.map((book) => (
+                {books.length > 0 && books.map((book) => (
                   <Books
-                    key={book.id}
+                    key={book.title}
                     title={book.title}
                     author={book.author}
                     category={book.category}
                   />
                 ))}
+                {books.length === 0 && (
+                  <div style={{ textAlign: 'center', color: 'black', fontSize: '2rem' }}>
+                    <h2>There are no Books yet.</h2>
+                    <p>Start adding some!</p>
+                  </div>
+                )}
                 <div className="seperator-line" />
                 <Form key="form" onAddBook={addBookHandler} />
               </>
