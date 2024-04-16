@@ -11,3 +11,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #fafafa;
 }
+
+.seperator-line {
+  border-bottom: 1px solid #e8e8e8;
+  margin: 4rem 10%;
+}

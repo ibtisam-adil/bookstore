@@ -5,14 +5,14 @@ form {
 .form-title {
   color: #888;
   font-size: 2.5rem;
-  margin: 1.8rem 0;
+  margin-bottom: 2rem;
 }
 
 .input-field {
   grid-gap: 10px;
   display: grid;
   gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 2fr 2fr 1fr;
 }
 
 form input {
