@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
-import Books from './components/bookList/Books';
+import Books from './components/book/Books';
 import Form from './components/form/Form';
 
 function App() {
@@ -20,14 +20,7 @@ function App() {
             path="/"
             element={(
               <>
-                {books.map((book) => (
-                  <Books
-                    key={book.id}
-                    title={book.title}
-                    author={book.author}
-                    category={book.category}
-                  />
-                ))}
+                <Books books={books} />
                 <div className="seperator-line" />
                 <Form key="form" onAddBook={addBookHandler} />
               </>
