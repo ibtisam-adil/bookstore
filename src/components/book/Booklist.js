@@ -1,8 +1,8 @@
-import './books.css';
+import './booklist.css';
 import PropTypes from 'prop-types';
 import Progress from '../progress/Progress';
 
-const Books = ({ title, author, category }) => (
+const Booklist = ({ title, author, category }) => (
   <section className="book-card">
     <div className="main">
       <div className="book-detail">
@@ -28,10 +28,10 @@ const Books = ({ title, author, category }) => (
   </section>
 );
 
-Books.propTypes = {
+Booklist.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
 };
 
-export default Books;
+export default Booklist;

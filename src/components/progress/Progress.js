@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import './progress.css';
 
 const Progress = () => {
   const [progressValue, setProgressValue] = useState(0);
