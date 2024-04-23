@@ -6,11 +6,9 @@ const Navbar = () => (
   <nav className="navbar">
     <div className="links">
       <span className="bookstore-cms">Bookstore CMS</span>
-      {/* <span className="books">BOOKS</span> */}
       <NavLink to="/" className="books">
         BOOKS
       </NavLink>
-      {/* <span className="categories">CATEGORIES</span> */}
       <NavLink to="/categories" className="categories">
         CATEGORIES
       </NavLink>
