@@ -8,11 +8,65 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: #fafafa;
 }
 
 .seperator-line {
   border-bottom: 1px solid #e8e8e8;
   margin: 4rem 10%;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 850px) {
+  form .input-field {
+    width: 100%;
+    grid-template-columns: none;
+  }
+
+  form .submit {
+    width: 50%;
+  }
+
+  .navbar .links {
+    font-size: 1.2rem;
+  }
+
+  .links .bookstore-cms {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar .links {
+    gap: 2rem;
+    font-size: 1rem;
+  }
+
+  .links .bookstore-cms {
+    font-size: 1.5rem;
+  }
+
+  .book-data .default {
+    font-size: 1.4rem;
+  }
+
+  form input {
+    padding: 1.2rem;
+  }
+
+  form .form-title {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .navbar .links {
+    gap: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .links .bookstore-cms {
+    font-size: 1.3rem;
+  }
 }

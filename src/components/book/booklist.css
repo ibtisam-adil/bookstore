@@ -88,3 +88,9 @@
   max-width: 180px;
   padding: 15px 20px;
 }
+
+.default {
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+}

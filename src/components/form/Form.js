@@ -1,32 +1,30 @@
 import { useState } from 'react';
 import './form.css';
-import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { createBook } from '../../redux/books/booksSlice';
 
-const Form = ({ onAddBook }) => {
-  const [bookTitle, setBookTitle] = useState('');
-  const [bookAuthor, setBookAuthor] = useState('');
-  const [bookCategory, setBookCategory] = useState('');
+const Form = () => {
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
+
+  const dispatch = useDispatch();
 
   const titleChangeHandler = (event) => {
-    setBookTitle(event.target.value);
+    setTitle(event.target.value);
   };
 
   const authorChangeHandler = (event) => {
-    setBookAuthor(event.target.value);
+    setAuthor(event.target.value);
   };
 
   const categoryChangeHandler = (event) => {
-    setBookCategory(event.target.value);
+    setCategory(event.target.value);
   };
 
   const submitHandler = (event) => {
     event.preventDefault();
-    const bookData = {
-      title: bookTitle,
-      author: bookAuthor,
-      category: bookCategory,
-    };
-    onAddBook(bookData);
+    dispatch(createBook({ title, author, category }));
   };
 
   return (
@@ -58,10 +56,6 @@ const Form = ({ onAddBook }) => {
       </div>
     </form>
   );
-};
-
-Form.propTypes = {
-  onAddBook: PropTypes.func.isRequired,
 };
 
 export default Form;
