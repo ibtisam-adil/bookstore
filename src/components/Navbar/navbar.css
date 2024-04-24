@@ -1,4 +1,7 @@
 .navbar {
+  position: fixed;
+  left: 0;
+  width: calc(100% - 8rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,6 +10,7 @@
   border: 2px solid #e8e8e8;
   padding: 2.5rem 10%;
   margin-bottom: 2rem;
+  z-index: 5;
 }
 
 .links {
