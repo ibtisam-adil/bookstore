@@ -32,7 +32,7 @@ const Progress = () => {
         }}
       />
       <div className="progress-value">
-        <p>
+        <p className="percent">
           {progressValue}
           %
         </p>
