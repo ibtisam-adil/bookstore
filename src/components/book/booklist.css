@@ -3,16 +3,20 @@
 }
 
 .main {
-  display: grid;
-  grid-template-columns: 1.8fr 1.5fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: 1px solid #e8e8e8;
   background-color: #fff;
 }
 
 .book-detail {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   font-size: 1.8rem;
-  padding: 3rem 4rem;
+  padding: 2rem 3rem;
+  width: 30%;
 }
 
 .book-author {
@@ -32,9 +36,8 @@
 
 .buttons {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 20px;
-  padding: 0 10px 0 0;
 }
 
 .btn {
@@ -43,7 +46,7 @@
   border-right: 1px solid #e8e8e8;
   color: #4386bf;
   padding: 0 15px 0 0;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
 }
 
 .line {
@@ -56,11 +59,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 37%;
 }
 
 .seperator {
   height: 8.5rem;
-  margin: 1.125rem 3.688rem 0 6.938rem;
+  margin: 1.125rem 2.688rem 0 7rem;
   border: solid 1px #e8e8e8;
 }
 
@@ -70,6 +74,7 @@
   justify-content: center;
   gap: 1rem;
   font-size: 2rem;
+  width: 30%;
 }
 
 .chapter-heading {
@@ -84,7 +89,7 @@
   border: none;
   border-radius: 7px;
   color: #fff;
-  width: 65%;
+  width: 70%;
   max-width: 180px;
   padding: 15px 20px;
 }

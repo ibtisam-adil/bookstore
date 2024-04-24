@@ -1,0 +1,6 @@
+.page2 {
+  display: grid;
+  place-items: center;
+  font-size: 4.5rem;
+  padding-top: 7rem;
+}
