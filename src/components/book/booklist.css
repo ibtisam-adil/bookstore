@@ -103,3 +103,10 @@
   color: black;
   font-size: 2rem;
 }
+
+.loading {
+  height: 100vh;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react';
 import './progress.css';
 
+const getRandomNumber = () => Math.floor(Math.random() * 86) + 10;
+const randNum = getRandomNumber();
+
 const Progress = () => {
   const [progressValue, setProgressValue] = useState(0);
-  const progressEndValue = 65;
+  const progressEndValue = randNum;
   const speed = 100;
 
   useEffect(() => {

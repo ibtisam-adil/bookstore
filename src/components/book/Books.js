@@ -3,10 +3,16 @@ import { useSelector } from 'react-redux';
 import Booklist from './Booklist';
 
 const Books = () => {
+  const isLoading = useSelector((state) => state.bookReducer.isLoading);
   const bookData = useSelector((state) => state.bookReducer.books);
+
+  if (isLoading) {
+    return <div className="loading">Loading...</div>;
+  }
+
   return (
     <div className="book-data">
-      { bookData.length > 0 ? (
+      {bookData.length > 0 ? (
         bookData.map((data) => (
           <Booklist
             key={data.title}
