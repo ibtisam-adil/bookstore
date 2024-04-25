@@ -1,3 +1,7 @@
+.book-data {
+  padding-top: 9rem;
+}
+
 .book-card {
   padding: 4rem 10% 0 10%;
 }
@@ -98,4 +102,12 @@
   text-align: center;
   color: black;
   font-size: 2rem;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  font-size: 5rem;
 }

@@ -86,6 +86,10 @@ body {
   .buttons .btn {
     padding: 0 4px 0 0;
   }
+
+  .book-data .loading {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 650px) {
@@ -156,6 +160,10 @@ body {
 
   .book-status .update-progress {
     font-size: 0.8rem;
+  }
+
+  .book-data .loading {
+    font-size: 2rem;
   }
 }
 
