@@ -65,7 +65,7 @@ The Bookstore project is a web application constructed with React, serving as th
 
 ## 🚀 Live Demo <a name="To-do List"></a>
 
-[@my portfolio app](https://ibtisam-bookstore.netlify.app/)
+[@bookstore](https://ibtisam-bookstore.netlify.app/)
 This is live version of my protfolio project.you can click on this link to watch live demo
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
