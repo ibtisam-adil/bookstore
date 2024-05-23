@@ -63,7 +63,7 @@ The Bookstore project is a web application constructed with React, serving as th
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="To-do List"></a>
+## 🚀 Live Demo <a name="BookStore"></a>
 
 [@bookstore](https://ibtisam-bookstore.netlify.app/)
 This is live version of my bookstore project.you can click on this link to watch live demo
@@ -99,7 +99,7 @@ Step 2: Locate the folder where you cloned your project to and open the `index.h
 👤 **IBTISAM ADIL**
 
 - GitHub: [@ibtisam-adil](https://github.com/ibtisam-adil)
-- Twitter: [@ibtisam\_\_adil](https://twitter.com/Ibtisam__adil)
+- Twitter: [@ibtisam__adil](https://twitter.com/Ibtisam__adil)
 - LinkedIn: [@ibtisamadil](http://www.linkedin.com/in/ibtisamadil)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
