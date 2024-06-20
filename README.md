@@ -50,6 +50,7 @@ The Bookstore project is a web application constructed with React, serving as th
 - **It has CSS**
 - **It has javascript**
 - **It has react**
+- **It has redux-toolkit**
 - **Responsive design**
 
 <!-- Features -->
